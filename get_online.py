@@ -20,10 +20,10 @@ async def main():
     # print('Is User offline?', isinstance(me_.status, telethon.tl.types.UserStatusOffline))
     # print('Is User online?', isinstance(me_.status, telethon.tl.types.UserStatusOnline))
     if isinstance(me_.status, telethon.tl.types.UserStatusOffline):
-        print('В последний раз был онлайн:')
+        print('Сейчас оффлайн. В последний раз был онлайн:')
         print(me_.status.was_online.strftime('%H:%M:%S %d-%m-%Y'))
     elif isinstance(me_.status, telethon.tl.types.UserStatusOnline):
-        print('Вывалиться в оффлайн:')
+        print('Сейчас онлайн. Вывалиться в оффлайн:')
         print(me_.status.expires.strftime('%H:%M:%S %d-%m-%Y'))
     else:
         print('Я не знаю, что с этим пользователем не так!')
