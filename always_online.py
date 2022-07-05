@@ -59,5 +59,6 @@ with tg_client:
 
             logger.info('Ну и просто подождем {0} секунд.'.format(TIME_TO_WAIT))
             time.sleep(TIME_TO_WAIT)
+
     except KeyboardInterrupt:
         logger.info('Убито с клаивиатуры.')
